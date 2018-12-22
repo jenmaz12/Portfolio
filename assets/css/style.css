@@ -1,0 +1,19 @@
+body {
+    background-image: url(../images/circles-light.png);
+}
+
+.icon {
+    width: 30px;
+}
+
+#portfolio-icon {
+    width: 35px;
+}
+
+#portfolio-link {
+    padding-left: .75rem;
+}
+
+.nav {
+    width: auto;
+}
