@@ -1,19 +1,61 @@
 body {
-    background-image: url(../images/circles-light.png);
+    background-image: url(../images/fresh_snow_@2X.png);
+    width: 100%;
 }
 
 .icon {
     width: 30px;
+    filter: invert(100%);
 }
 
 #portfolio-icon {
     width: 35px;
 }
 
-#portfolio-link {
-    padding-left: .75rem;
+.nav-item {
+    text-align: center;
 }
 
 .nav {
-    width: auto;
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    background-color: #395e60;
+}
+
+#content {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#profile-pic {
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #395e60;
+}
+
+.row {
+    width: 100%;
+    margin:0;
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        z-index: 0;
+        position: relative;
+        float: left;
+    }
+
+    #content {
+        width: auto;
+        float: left;
+    }
 }
