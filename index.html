@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
@@ -16,25 +17,95 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#"><img src="assets/images/home-icon.png" alt="Home" class="icon"></a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link active" href="#"><img src="assets/images/about-me-icon.png" alt="About Me" class="icon"></a>
+            <li class="nav-item" id="about-icon">
+            <a class="nav-link active" data-name="about" href="#"><img src="assets/images/about-me-icon.png" alt="About Me" class="icon"></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#"><img src="assets/images/resume-icon.png" alt="Resume" class="icon"></a>
+            <a class="nav-link" data-name="resume" href="#"><img src="assets/images/resume-icon.png" alt="Resume" class="icon"></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#" id="portfolio-link"><img src="assets/images/portfolio-icon.png" alt="Portfolio" class="icon" id="portfolio-icon"></a>
+            <a class="nav-link" data-name="portfolio" href="#" id="portfolio-link"><img src="assets/images/portfolio-icon.png" alt="Portfolio" class="icon" id="portfolio-icon"></a>
             </li>
             <li class="nav-item" id="contact">
-                <a class="nav-link" href="#"><img src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
+                <a class="nav-link" data-name="contact" href="#"><img src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
             </li>
         </ul> 
     </header>
 
-        <div class = "row" id="content">
-            <img src="assets/images/Profile_Pic.jpg" alt="Profile Picture" id="profile-pic">
-            <h1>Jennifer Mazanec</h1>
-            <h2>Web Developer</h2>
+    <div class = "row" id="content">
+        <img src="assets/images/Profile_Pic.jpg" alt="Profile Picture" id="profile-pic">
+        <h1>Jennifer Mazanec</h1>
+        <h3>Web Developer</h3>
+    </div>
+
+    <div id="about-page" class="modal">
+        <div class="modal-content">
+            <span class="close" id="about-close">&times;</span>
+            <h1>About Me</h1>
+            <p>My name is Jennifer Mazanec. I was born and raised in the Cleveland, Ohio area, although I did spend a few of my early years abroad. I attended the University of Notre Dame (Go Irish!) where I earned a Bachelor of Arts degree in Psychology with a minor in Business Economics. I decided to pursue a career in Human Resources working for a retail company in their Learning and Development Department. 
+            <br>
+            <br>I soon realized this career path was not for me and started to think about what really interested and excited me (better late than never). I have always loved and had a knack for technology, and I found that I am most engaged in projects that have a technical component. This along with a desire for a creative aspect in my work prompted me to pursue web development. This brought me to the Case Western Reserve University Coding Boot Camp.
+            <br>
+            <br>In the rare moments when I am not absorbed in code, I enjoy reading and watching TV (nothing too serious &#9786;) and playing tennis. I love to travel and explore new places (even in my own backyard). I am an avid BuzzFeed follower and spend far too much time considering what my Chipotle order says about my personality. I also attempt to wrangle two very unruly dogs.
+            </p>
         </div>
+    </div>
+
+    <div id="resume-page" class="modal">
+        <div class="modal-content">
+            <span class="close" id="resume-close">&times;</span>
+            <h1>Resume</h1>
+        </div>
+    </div>
+
+    <div id="portfolio-page" class="modal">
+        <div class="modal-content">
+            <span class="close" id="portfolio-close">&times;</span>
+            <h1>Portfolio</h1>
+            <div id="projects">
+        
+                <a href="https://jenmaz12.github.io/Word-Guess-Game/">
+                    <div id="Hangman">
+                        <img src="assets/images/placeholder1.jpg" class="project_images" alt="Hangman image">
+                        <p class="project_name">Hangman</p>
+                    </div>
+                </a>
+                
+                <a href="https://jenmaz12.github.io/unit-4-game/">
+                    <div id="RPG">
+                        <img src="assets/images/placeholder2.jpg" class="project_images" alt="RPG image">
+                        <p class="project_name">Crystal Collector Game</p>
+                    </div>
+                </a>
+        
+                <a href="https://jenmaz12.github.io/TriviaGame/">
+                    <div id="Trivia">
+                        <img src="assets/images/placeholder3.jpg" class="project_images" alt="Trivia image">
+                        <p class="project_name">Trivia Game</p>
+                    </div>
+                </a>
+        
+                <div id="Rutgers">
+                    <img src="assets/images/placeholder4.jpg" class="project_images" alt="Rutgers Info Widget image">
+                    <p class="project_name">Rutgers Info Widget</p>
+                </div>
+        
+                <a href="https://jenmaz12.github.io/Train-Scheduler/">
+                    <div id="Rock">
+                        <img src="assets/images/placeholder5.jpg" class="project_images" alt="Rock Paper Scissors image">
+                        <p class="project_name">Train Scheduler</p>
+                    </div>
+                </a>
+        
+                <a href="https://jenmaz12.github.io/GifTastic/">
+                    <div id="Gif">
+                        <img src="assets/images/placeholder6.jpeg" class="project_images" alt="Gif image">
+                        <p class="project_name">GifTastic!</p>
+                    </div>
+                </a>
+        
+            </div>
+        </div>
+    </div>
 </body>
 </html>
