@@ -91,3 +91,9 @@ header {
         width: 147px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    header {
+        text-align: center;
+    }
+}
