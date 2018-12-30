@@ -2,6 +2,7 @@ $(document).ready(function() {
     var name;
     var modal;
     $(document).on("click",".nav-link",function(){
+        $(".modal").attr("style","display: none");
         name = $(this).attr("data-name");
         modal = document.getElementById(name + "-page");
         modal.style.display = "block";
