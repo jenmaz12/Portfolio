@@ -59,14 +59,35 @@ header {
 }
 
 @media screen and (max-width:768px) {
-    .nav {
-        z-index: 0;
-        position: relative;
-        float: left;
+    header {
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        text-align: left;
+        /* overflow: auto; */
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    ul {
+        margin-bottom: 0;
+        height: 50px;
+    }
+
+    #portfolio-link {
+        padding-bottom: 3px;
     }
 
     #content {
-        width: auto;
-        float: left;
+        width: 100%;
+        padding-top: 75px;
+    }
+
+    #profile-pic {
+        width: 147px;
     }
 }
