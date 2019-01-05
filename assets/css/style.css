@@ -89,11 +89,19 @@ header {
     padding-right: 0;
 }
 
+#resume {
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
   #projects {
       margin-top: 10px;
   }
   .project_images {
       width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .project_name {
@@ -109,32 +117,44 @@ header {
   #Hangman {
       float: left;
       margin-right: 20px;
+      height: 300px;
+      margin-top: 20px;
   }
 
   #Crystal {
     float: left;  
     margin-right: 20px;
+    height: 300px;
+    margin-top: 20px;
   }
 
   #Trivia {
       float: left;
       margin-right: 20px;
+      height: 300px;
+      margin-top: 20px;
   }
 
   #RouteVisor {
       float: left;
       margin-right: 20px;
+      height: 300px;
+      margin-top: 20px;
   }
 
   #Train {
       float: left;
       margin-right: 20px;
+      height: 300px;
+      margin-top: 20px;
   }
 
   #Gif {
-      float: left;
       margin-right: 20px;
       width: 300px;
+      display: inline-block;
+      height: 300px;
+      margin-top: 20px;
   }
 
   .contact-image {
@@ -199,5 +219,42 @@ header {
 
     .project_images {
         width: 250px;
+    }
+
+    #Hangman {
+        height: 250px;
+        margin-top: 10px;
+    }
+  
+    #Crystal {
+        height: 250px;
+        margin-top: 20px;
+    }
+  
+    #Trivia {
+        height: 250px;
+        margin-top: 20px;
+    }
+  
+    #RouteVisor {
+        height: 250px;
+        margin-top: 20px;
+    }
+  
+    #Train {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    #Gif {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    #resume {
+        width: 100%;
+        height: 450px;
+        margin-left: 0;
     }
 }
