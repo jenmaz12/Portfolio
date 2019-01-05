@@ -126,61 +126,34 @@ header {
       font-weight: bold;
   }
 
-  #Hangman {
-      float: left;
+  .project-div {
+      display: inline-block;
       margin-right: 20px;
       margin-top: 20px;
       width: 300px;
       height: 350px;
-      word-wrap: break-word;
-      display: inline-block;
+  }
 
+  #Hangman {
+      float: left;
+      word-wrap: break-word;
   }
 
   #Crystal {
     float: left;  
-    margin-right: 20px;
-    width: 300px;
-    height: 350px;
-    margin-top: 20px;
     word-wrap: break-word;
-    display: inline-block;
-
   }
 
   #Trivia {
       float: left;
-      display: inline-block;
-      margin-right: 20px;
-      width: 300px;
-      height: 350px;
-      margin-top: 20px;
   }
 
   #RouteVisor {
       float: left;
-      display: inline-block;
-      margin-right: 20px;
-      width: 300px;
-      height: 350px;
-      margin-top: 20px;
   }
 
   #Train {
-      float: left;
-      display: inline-block;
-      margin-right: 20px;
-      width: 300px;
-      height: 350px;
-      margin-top: 20px;
-  }
-
-  #Gif {
-      display: inline-block;
-      margin-right: 20px;
-      width: 300px;
-      height: 350px;
-      margin-top: 20px;
+      float: left;     
   }
 
   .contact-image {
@@ -211,7 +184,6 @@ header {
         height: 50px;
         width: 100%;
         text-align: left;
-        /* overflow: auto; */
     }
 
     .nav-item {
@@ -236,6 +208,10 @@ header {
     #profile-pic {
         width: 147px;
     }
+
+    .project-div {
+        margin-left: 23%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -247,39 +223,33 @@ header {
         width: 250px;
     }
 
-    #Hangman {
+    .project-div {
+        margin-left: 0;
         height: 300px;
         width: 250px;
+    }
+
+    #Hangman {
         margin-top: 10px;
     }
   
     #Crystal {
-        height: 300px;
-        width: 250px;
         margin-top: 20px;
     }
   
     #Trivia {
-        height: 300px;
-        width: 250px;
         margin-top: 20px;
     }
   
     #RouteVisor {
-        height: 300px;
-        width: 250px;
         margin-top: 20px;
     }
   
     #Train {
-        height: 300px;
-        width: 250px;
         margin-top: 20px;
     }
 
     #Gif {
-        width: 250px;
-        height: 300px;
         margin-top: 20px;
     }
 
@@ -288,4 +258,27 @@ header {
         height: 450px;
         margin-left: 0;
     }
+    #linkedin-image {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .project-div {
+        width: 200px;
+        height: 250px;
+    }
+
+    .project_images {
+        width: 200px;
+    }
+
+    .github-repo {
+        top: -80px;
+    }
+
+    .adjusted {
+        top: -65px;
+    }
+
 }
