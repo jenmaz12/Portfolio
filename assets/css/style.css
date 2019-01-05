@@ -6,7 +6,6 @@ body {
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
 .icon {
@@ -102,6 +101,7 @@ header {
   .project_images {
       width: 300px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 0;
   }
 
   .project_name {
@@ -114,46 +114,72 @@ header {
       padding: 20px;
   }
 
+  .github-repo {
+      margin-top: 0;
+      line-height: 1;
+      text-decoration: underline;
+      position: relative;
+      top: -60px;
+  }
+
+  .github-repo:hover {
+      font-weight: bold;
+  }
+
   #Hangman {
       float: left;
       margin-right: 20px;
-      height: 300px;
       margin-top: 20px;
+      width: 300px;
+      height: 350px;
+      word-wrap: break-word;
+      display: inline-block;
+
   }
 
   #Crystal {
     float: left;  
     margin-right: 20px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     margin-top: 20px;
+    word-wrap: break-word;
+    display: inline-block;
+
   }
 
   #Trivia {
       float: left;
+      display: inline-block;
       margin-right: 20px;
-      height: 300px;
+      width: 300px;
+      height: 350px;
       margin-top: 20px;
   }
 
   #RouteVisor {
       float: left;
+      display: inline-block;
       margin-right: 20px;
-      height: 300px;
+      width: 300px;
+      height: 350px;
       margin-top: 20px;
   }
 
   #Train {
       float: left;
+      display: inline-block;
       margin-right: 20px;
-      height: 300px;
+      width: 300px;
+      height: 350px;
       margin-top: 20px;
   }
 
   #Gif {
+      display: inline-block;
       margin-right: 20px;
       width: 300px;
-      display: inline-block;
-      height: 300px;
+      height: 350px;
       margin-top: 20px;
   }
 
@@ -222,33 +248,38 @@ header {
     }
 
     #Hangman {
-        height: 250px;
+        height: 300px;
+        width: 250px;
         margin-top: 10px;
     }
   
     #Crystal {
-        height: 250px;
+        height: 300px;
+        width: 250px;
         margin-top: 20px;
     }
   
     #Trivia {
-        height: 250px;
+        height: 300px;
+        width: 250px;
         margin-top: 20px;
     }
   
     #RouteVisor {
-        height: 250px;
+        height: 300px;
+        width: 250px;
         margin-top: 20px;
     }
   
     #Train {
-        height: 250px;
+        height: 300px;
+        width: 250px;
         margin-top: 20px;
     }
 
     #Gif {
         width: 250px;
-        height: 250px;
+        height: 300px;
         margin-top: 20px;
     }
 
