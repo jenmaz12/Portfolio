@@ -26,10 +26,10 @@
                 <a class="nav-link" data-name="resume" data-toggle="modal" href="#resume-page"><img src="assets/images/resume-icon.png" alt="Resume" class="icon"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-name="portfolio" href="#" id="portfolio-link"><img src="assets/images/portfolio-icon.png" alt="Portfolio" class="icon" id="portfolio-icon"></a>
+                <a class="nav-link" data-name="portfolio" data-toggle="modal" href="#portfolio-page" id="portfolio-link"><img src="assets/images/portfolio-icon.png" alt="Portfolio" class="icon" id="portfolio-icon"></a>
             </li>
-            <li class="nav-item" id="contact">
-                <a class="nav-link" data-name="contact" href="#"><img src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
+            <li class="nav-item" id="contact-icon">
+                <a class="nav-link" data-name="contact" data-toggle="modal" href="#contact-page"><img src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
             </li>
         </ul> 
     </header>
@@ -73,54 +73,94 @@
         </div>
     </div>
 
-    <div id="portfolio-page" class="modal">
-        <div class="modal-content">
-            <span class="close" id="portfolio-close">&times;</span>
-            <h1>Portfolio</h1>
-            <div id="projects">
-        
-                <a href="https://jenmaz12.github.io/Word-Guess-Game/">
-                    <div id="Hangman">
-                        <img src="assets/images/candy-hangman.jpg" class="project_images" alt="Hangman: Candy Edition image">
-                        <p class="project_name">Hangman: Candy Edition</p>
+    <div id="portfolio-page" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="portfolio-close">&times;</button>
+                    <h1 class="modal-title">Portfolio</h1>
+                </div>
+                <div id="projects">
+            
+                    <a href="https://jenmaz12.github.io/Word-Guess-Game/">
+                        <div id="Hangman">
+                            <img src="assets/images/candy-hangman.jpg" class="project_images" alt="Hangman: Candy Edition image">
+                            <p class="project_name">Hangman: Candy Edition</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://jenmaz12.github.io/unit-4-game/">
+                        <div id="Crystal">
+                            <img src="assets/images/crystal-collector.jpg" class="project_images" alt="Crystal Collector image">
+                            <p class="project_name">Crystal Collector Game</p>
+                        </div>
+                    </a>
+            
+                    <a href="https://jenmaz12.github.io/Harry-Potter-Trivia-Game/">
+                        <div id="Trivia">
+                            <img src="assets/images/harry-potter-trivia.jpg" class="project_images" alt="Harry Potter Trivia Game image">
+                            <p class="project_name">Harry Potter Trivia Game</p>
+                        </div>
+                    </a>
+            
+                    <a href="https://group3tripplanner.herokuapp.com/">
+                        <div id="RouteVisor">
+                            <img src="assets/images/routevisor.jpg" class="project_images" alt="RouteVisor image">
+                            <p class="project_name">RouteVisor</p>
+                        </div>
+                    </a>
+            
+                    <a href="https://jenmaz12.github.io/Train-Scheduler/">
+                        <div id="Train">
+                            <img src="assets/images/train-scheduler.jpg" class="project_images" alt="Train Scheduler image">
+                            <p class="project_name">Train Scheduler</p>
+                        </div>
+                    </a>
+            
+                    <a href="https://jenmaz12.github.io/GifTastic/">
+                        <div id="Gif" class="clearfix">
+                            <img src="assets/images/giftastic.jpg" class="project_images" alt="Gif image">
+                            <p class="project_name">GifTastic!</p>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div id="contact-page" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="portfolio-close">&times;</button>
+                    <h1 class="modal-title">Contact</h1>
+                </div>
+                <h3>Please see my contact information below if you would like to get in touch!</h3>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="contact-image" src="assets/images/contact-icon.png" alt="Email">
+                        <h4 class="contact-info" id="email-address">jenmaz12@gmail.com</h4>
                     </div>
-                </a>
-                
-                <a href="https://jenmaz12.github.io/unit-4-game/">
-                    <div id="Crystal">
-                        <img src="assets/images/crystal-collector.jpg" class="project_images" alt="Crystal Collector image">
-                        <p class="project_name">Crystal Collector Game</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="contact-image" id="phone-image" src="assets/images/phone.png" alt="Phone">
+                        <h4 class="contact-info" id="phone-number">(440) 281-0761</h4>
                     </div>
-                </a>
-        
-                <a href="https://jenmaz12.github.io/Harry-Potter-Trivia-Game/">
-                    <div id="Trivia">
-                        <img src="assets/images/harry-potter-trivia.jpg" class="project_images" alt="Harry Potter Trivia Game image">
-                        <p class="project_name">Harry Potter Trivia Game</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="contact-image" id="github-image" src="assets/images/github.png" alt="GitHub">
+                        <a href="https://github.com/jenmaz12"><h4 class="contact-info">https://github.com/jenmaz12</h4></a>
                     </div>
-                </a>
-        
-                <a href="https://group3tripplanner.herokuapp.com/">
-                    <div id="RouteVisor">
-                        <img src="assets/images/routevisor.jpg" class="project_images" alt="RouteVisor image">
-                        <p class="project_name">RouteVisor</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="contact-image" id="linkedin-image" src="assets/images/linkedin.png" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/jennifer-mazanec-609783a0/"><h4 class="contact-info" id="linkedin-profile">https://www.linkedin.com/in/jennifer-mazanec-609783a0/</h4></a>
                     </div>
-                </a>
-        
-                <a href="https://jenmaz12.github.io/Train-Scheduler/">
-                    <div id="Train">
-                        <img src="assets/images/train-scheduler.jpg" class="project_images" alt="Train Scheduler image">
-                        <p class="project_name">Train Scheduler</p>
-                    </div>
-                </a>
-        
-                <a href="https://jenmaz12.github.io/GifTastic/">
-                    <div id="Gif">
-                        <img src="assets/images/giftastic.jpg" class="project_images" alt="Gif image">
-                        <p class="project_name">GifTastic!</p>
-                    </div>
-                </a>
-        
+                </div>
             </div>
         </div>
     </div>

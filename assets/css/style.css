@@ -78,38 +78,32 @@ header {
 .modal-content {
     padding: 20px;
 }
-  
-  /* Modal Content/Box */
-  /* .modal-content { */
-    /* background-color: #e2e2e2; */
-    /* margin: 40px auto; 15% from the top and centered */
-    /* padding: 20px; */
-    /* border: 1px solid #888; */
-    /* width: 80%; Could be more or less, depending on screen size */
-  /* } */
-  
-  /* The Close Button */
-  /* .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: right;
-  } */
-  
-  /* .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  } */
 
+.modal-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.modal-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+  #projects {
+      margin-top: 10px;
+  }
   .project_images {
       width: 300px;
   }
 
   .project_name {
       text-decoration: none;
+      position: relative;
+      top: -120px;
+      background-color: #395e60;
+      color: white;
+      width: 100%;
+      padding: 20px;
   }
 
   #Hangman {
@@ -137,6 +131,33 @@ header {
       margin-right: 20px;
   }
 
+  #Gif {
+      float: left;
+      margin-right: 20px;
+      width: 300px;
+  }
+
+  .contact-image {
+      width: 30px;
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+  }
+
+  #email-address {
+      margin: 0;
+      padding-top: 5px;
+  }
+
+  #phone-image {
+      clear: both;
+      float: left;
+      margin-top: 5px;
+  }
+
+  .contact-info {
+      word-wrap: break-word;
+  }
 @media screen and (max-width:768px) {
     header {
         top: 0;
@@ -174,5 +195,9 @@ header {
 @media screen and (max-width: 425px) {
     header {
         text-align: center;
+    }
+
+    .project_images {
+        width: 250px;
     }
 }
