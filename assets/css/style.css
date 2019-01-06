@@ -281,4 +281,24 @@ header {
         top: -65px;
     }
 
+    .contact-image {
+        display: block;
+        clear: both;
+        margin: auto;
+        align: center;
+    }
+
+    .contact-info {
+        display: block;
+        clear: both;
+    }
+
+    #linkedin-image {
+        margin-bottom: 0;
+    }
+
+    .contact-row {
+        align-content: center;
+    }
+
 }
