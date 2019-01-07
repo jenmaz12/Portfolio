@@ -4,6 +4,7 @@ window.onload = function() {
         if (viewportWidth < 375) {
             $(".contact-row").addClass("justify-content-sm-center");
             $(".contact-column").addClass("justify-content-sm-center");
+            $(".contact-image").addClass("row");
         }
     }
     mobile_layout();
