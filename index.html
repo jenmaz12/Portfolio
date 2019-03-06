@@ -27,29 +27,39 @@
 
 <body>
     <header>
-        <ul>
-            <li class="nav-item">
-                <a class="nav-link active" href="#home" title="Home"><img src="assets/images/home-icon.png" alt="Home"
-                        class="icon"></a>
-            </li>
-            <li class="nav-item" id="about-icon">
-                <a class="nav-link" data-name="about" href="#about-page" title="About Me"><img
-                        src="assets/images/about-me-icon.png" alt="About Me" class="icon"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-name="resume" href="#resume-page" title="Resume"><img
-                        src="assets/images/resume-icon.png" alt="Resume" class="icon"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-name="portfolio" href="#portfolio-page" id="portfolio-link"
-                    title="Portfolio"><img src="assets/images/portfolio-icon.png" alt="Portfolio" class="icon"
-                        id="portfolio-icon"></a>
-            </li>
-            <li class="nav-item" id="contact-icon">
-                <a class="nav-link" data-name="contact" href="#contact-page" title="Contact"><img
-                        src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
-            </li>
-        </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse"
+                    data-target="#collapsingNavbar1">
+                    ☰
+                </button>
+                <div class="collapse navbar-collapse" id="collapsingNavbar1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" title="Home"><img src="assets/images/home-icon.png"
+                                    alt="Home" class="icon"></a>
+                        </li>
+                        <li class="nav-item" id="about-icon">
+                            <a class="nav-link" data-name="about" href="#about-page" title="About Me"><img
+                                    src="assets/images/about-me-icon.png" alt="About Me" class="icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-name="resume" href="#resume-page" title="Resume"><img
+                                    src="assets/images/resume-icon.png" alt="Resume" class="icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-name="portfolio" href="#portfolio-page" id="portfolio-link"
+                                title="Portfolio"><img src="assets/images/portfolio-icon.png" alt="Portfolio"
+                                    class="icon" id="portfolio-icon"></a>
+                        </li>
+                        <li class="nav-item" id="contact-icon">
+                            <a class="nav-link" data-name="contact" href="#contact-page" title="Contact"><img
+                                    src="assets/images/contact-icon.png" alt="Contact" class="icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div class="container-fluid">
         <section id="home">
@@ -166,7 +176,12 @@
                                     <div class="modal-body">
                                         <h3>Project Description:</h3>
                                         <hr>
-                                        <p>Bamazon is a Node.js application run in command line which displays a products tables from a MySQL database and prompts the user for what item they would like to purchase, how many, and what their total is based on the item price. The application checks the database to ensure the item number is valid and there is sufficient quantity. The database is updated to reflect the new quantity.</p>
+                                        <p>Bamazon is a Node.js application run in command line which displays a
+                                            products tables from a MySQL database and prompts the user for what item
+                                            they would like to purchase, how many, and what their total is based on the
+                                            item price. The application checks the database to ensure the item number is
+                                            valid and there is sufficient quantity. The database is updated to reflect
+                                            the new quantity.</p>
                                         <h3>Technology Used:</h3>
                                         <hr>
                                         <ul>
@@ -231,16 +246,15 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                                <a data-toggle="modal" href="#dogo-page" title="Dog-Go">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="assets/images/dogo.jpg" class="card-img"
-                                            alt="Dog-Go image">
-                                        <div class="card-img-overlay d-flex flex-column">
-                                            <h5 class="card-title">Dog-Go</h5>
-                                        </div>
+                            <a data-toggle="modal" href="#dogo-page" title="Dog-Go">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/dogo.jpg" class="card-img" alt="Dog-Go image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Dog-Go</h5>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

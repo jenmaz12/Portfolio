@@ -14,9 +14,13 @@ header {
 }
 
 .container-fluid {
-    padding-left: 50px;
-    padding-right: 0;
+    /* padding-left: 50px; */
+    padding: 0;
 }
+.navbar {
+    padding: 0;
+}
+
 a {
     color: inherit;
 }
