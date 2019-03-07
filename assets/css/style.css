@@ -45,6 +45,10 @@ a {
     padding: 0;
 }
 
+#collapsed-nav {
+    color: #395e60;
+}
+
 #home {
     height: 100vh;
 }
@@ -229,6 +233,7 @@ a {
         height: 50px;
         width: 100%;
         text-align: left;
+        background-color: transparent;
     }
 
     .nav-item {
@@ -236,6 +241,10 @@ a {
         margin-left: 10px;
     }
 
+    .icon {
+        filter: none;
+        color: #395e60;
+    }
     ul {
         margin-bottom: 0;
         height: 50px;

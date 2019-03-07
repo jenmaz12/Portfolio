@@ -29,8 +29,8 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse"
-                    data-target="#collapsingNavbar1">
+                <button class="navbar-toggler hidden-md-up pull-right" id="collapsed-nav" type="button"
+                    data-toggle="collapse" data-target="#collapsingNavbar1">
                     ☰
                 </button>
                 <div class="collapse navbar-collapse" id="collapsingNavbar1">
@@ -148,10 +148,43 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/giftastic.jpg" class="card-img" alt="GifTastic! image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">GifTastic!</h5>
+                            <a data-toggle="modal" href="#gif-page" title="GifTastic!">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/giftastic.jpg" class="card-img" alt="GifTastic! image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">GifTastic!</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="gif-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">GifTastic!</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p></p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>MySQL</li>
+                                            <li>Node</li>
+                                            <li>Inquirer Node Module</li>
+                                            <li>MySQL Node Module</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/burger">GitHub Repository</a></li>
+                                            <li><a href="https://radiant-stream-35563.herokuapp.com/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,6 +287,58 @@
                                     </div>
                                 </div>
                             </a>
+                        </div>
+                        <div id="dogo-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Dog-Go</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>
+                                            This application allows users to create a profile and book appointments with
+                                            dog walkers to provide their pet with the exercise they need. People can
+                                            also sign up to become a dog walker on the site.
+                                            <br>
+                                            Users choose at the home screen if they want to "Schedule a Walk" or "Walk a
+                                            Dog". Based on their selection, they are routed to either a customer
+                                            information form or walker information form. Walkers are added to a walker
+                                            table in the database and shown all walkers in the database when they sign
+                                            up. Customers are
+                                            added to the customer table and routed to a calendar to book their
+                                            appointment.
+                                            <br>
+                                            When the customer chooses a date on the calendar, they are shown available
+                                            half hour appointments from 9:00am to 5:00pm on that day. When they choose
+                                            one of the available appointments, it is added to an appointments table and
+                                            no longer shown when the date is clicked.
+                                        </p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>MySQL</li>
+                                            <li>Node</li>
+                                            <li>Handlebars</li>
+                                            <li>Express</li>
+                                            <li>Sequelize</li>
+                                            <li>Heroku</li>
+                                            <li>Moment.js</li>
+                                            <li>LESS</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/dog-go">GitHub Repository</a></li>
+                                            <li><a href="https://blooming-spire-98049.herokuapp.com/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
