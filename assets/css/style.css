@@ -21,13 +21,17 @@ header {
     padding: 0;
 }
 
+.nav {
+    justify-content: center;
+}
+
 a {
     color: inherit;
 }
 
 .icon {
-    width: 30px;
-    filter: invert(100%);
+    font-size: 25px;
+    color: white
 }
 
 #portfolio-icon {
@@ -39,6 +43,7 @@ a {
     padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
+    width: fit-content;
 }
 
 .nav-link {
@@ -63,8 +68,10 @@ a {
 }
 
 #about-body {
-    padding: 10px;
+    padding: 70px;
+    padding-right: 20px;
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 #content {
@@ -206,6 +213,12 @@ a {
       float: left;     
   }
 
+  #contact-body {
+      padding: 60px;
+      padding-top: 0;
+      padding-bottom: 20px;
+  }
+
   .contact-image {
       width: 30px;
       float: left;
@@ -236,9 +249,18 @@ a {
         background-color: transparent;
     }
 
+    .nav {
+        justify-content: center;
+        width: fit-content;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-image: url(../images/fresh_snow_@2X.png);
+    }
+
     .nav-item {
         display: inline-block;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .icon {
@@ -247,7 +269,11 @@ a {
     }
     ul {
         margin-bottom: 0;
-        height: 50px;
+    }
+
+    ul.nav {
+        /* height: 50px; */
+
     }
 
     #portfolio-link {
@@ -267,9 +293,12 @@ a {
         width: 147px;
     }
 
-    .section-title {
-        padding-top: 70px;
+    #about-body {
+        padding: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
     .card {
         margin: auto;
     }
