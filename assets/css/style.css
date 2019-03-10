@@ -194,28 +194,6 @@ a {
       padding: 0;
   }
 
-  #Hangman {
-      float: left;
-      word-wrap: break-word;
-  }
-
-  #Crystal {
-    float: left;  
-    word-wrap: break-word;
-  }
-
-  #Trivia {
-      float: left;
-  }
-
-  #RouteVisor {
-      float: left;
-  }
-
-  #Train {
-      float: left;     
-  }
-
   #contact-body {
       padding: 60px;
       padding-top: 0;
@@ -230,17 +208,19 @@ a {
 
   #email-address {
       margin: 0;
-      padding-top: 5px;
   }
 
   #phone-image {
       clear: both;
       float: left;
-      margin-top: 5px;
   }
 
+  .contact-row {
+      margin-bottom: 10px;
+  }
   .contact-info {
       word-wrap: break-word;
+      padding-top: 0;
   }
 @media screen and (max-width:767px) {
     header {
@@ -290,13 +270,12 @@ a {
 
     #project-cards {
         position: relative;
-        /* z-index: 1; */
     }
+
     ul {
         margin-bottom: 0;
     }
-
-
+    
     #portfolio-link {
         padding-bottom: 3px;
     }
@@ -337,6 +316,10 @@ a {
         text-align: center;
     }
 
+    #home-name {
+        width: 75%;
+        margin: auto;
+    }
     .project_images {
         width: 250px;
     }
@@ -345,30 +328,6 @@ a {
         margin-left: 0;
         height: 300px;
         width: 250px;
-    }
-
-    #Hangman {
-        margin-top: 10px;
-    }
-  
-    #Crystal {
-        margin-top: 20px;
-    }
-  
-    #Trivia {
-        margin-top: 20px;
-    }
-  
-    #RouteVisor {
-        margin-top: 20px;
-    }
-  
-    #Train {
-        margin-top: 20px;
-    }
-
-    #Gif {
-        margin-top: 20px;
     }
 
     #resume {
@@ -417,9 +376,5 @@ a {
     .contact-row {
         align-content: center;
     }
-
-    /* .iPhone-breakpoint {
-        display: none;
-    } */
 
 }
