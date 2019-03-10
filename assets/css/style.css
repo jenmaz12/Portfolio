@@ -195,25 +195,15 @@ a {
   }
 
   #contact-body {
-      padding: 60px;
+      padding: 50px;
       padding-top: 0;
       padding-bottom: 20px;
   }
 
   .contact-image {
-      width: 30px;
-      float: left;
-      margin-right: 10px;
+      font-size: 25px;
   }
 
-  #email-address {
-      margin: 0;
-  }
-
-  #phone-image {
-      clear: both;
-      float: left;
-  }
 
   .contact-row {
       margin-bottom: 10px;
@@ -221,6 +211,9 @@ a {
   .contact-info {
       word-wrap: break-word;
       padding-top: 0;
+      width: fit-content;
+      display: inline-block;
+      margin-left: 10px;
   }
 @media screen and (max-width:767px) {
     header {
@@ -339,8 +332,13 @@ a {
     #resume-body {
         text-align: center;
     }
+
     #linkedin-image {
         margin-bottom: 30px;
+    }
+
+    .contact-info {
+        width: 100%;
     }
 
 }
