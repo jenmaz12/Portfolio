@@ -141,11 +141,49 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/train-scheduler.jpg" class="card-img"
-                                    alt="Train Scheduler image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">Train Scheduler</h5>
+                            <a data-toggle="modal" href="#train-page" title="GifTastic!">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/train-scheduler.jpg" class="card-img"
+                                        alt="Train Scheduler image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Train Scheduler</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="train-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Train Scheduler</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>This application uses a Firebase database to store train schedules. Train times are retrieved from the database and displayed in a table to the user. Users can also add a train to the database by filling out and submitting the form below the table. The Next Arrival and Minutes Away columns are calculated using Moment.js</p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>Firebase</li>
+                                            <li>Moment.js</li>
+                                        </ul>
+                                        <br>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/Train-Scheduler">GitHub Repository</a>
+                                            </li>
+                                            <li><a href="https://jenmaz12.github.io/Train-Scheduler/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -170,20 +208,27 @@
                                     <div class="modal-body">
                                         <h3>Project Description:</h3>
                                         <hr>
-                                        <p></p>
+                                        <p>This application uses the GIPHY API to dynamically get and display animal
+                                            GIFs to the user. When the user clicks an animal button, the application
+                                            makes a GET request to the API for the top ten GIFs of that animal. These
+                                            are displayed to the user and when the user clicks on a GIF, its state
+                                            changes from static to dynamic. The user can also add an animal to the array
+                                            and the application will generate a button for that animal.</p>
                                         <h3>Technology Used:</h3>
                                         <hr>
                                         <ul>
-                                            <li>MySQL</li>
-                                            <li>Node</li>
-                                            <li>Inquirer Node Module</li>
-                                            <li>MySQL Node Module</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>GIPHY API</li>
                                         </ul>
                                         <h3>Links:</h3>
                                         <hr>
                                         <ul>
-                                            <li><a href="https://github.com/jenmaz12/burger">GitHub Repository</a></li>
-                                            <li><a href="https://radiant-stream-35563.herokuapp.com/">Deployed Site</a>
+                                            <li><a href="https://github.com/jenmaz12/GifTastic">GitHub Repository</a>
+                                            </li>
+                                            <li><a href="https://jenmaz12.github.io/GifTastic/">Deployed Site</a>
                                             </li>
                                         </ul>
                                     </div>
