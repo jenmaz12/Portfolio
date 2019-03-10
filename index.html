@@ -106,42 +106,209 @@
                 <div id="projects" class="container">
                     <div class="row" id="project-cards">
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/candy-hangman.jpg" class="card-img"
-                                    alt="Hangman: Candy Edition image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">Hangman: Candy Edition</h5>
+                            <a data-toggle="modal" href="#hangman-page" title="Hangman: Candy Edition">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/candy-hangman.jpg" class="card-img"
+                                        alt="Hangman: Candy Edition image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Hangman: Candy Edition</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="hangman-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Hangman: Candy Edition</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>This application is a candy-themed hangman game. A word is chosen randomly from an array of candy-themed words and displayed to the user with a __ representing each letter. The user starts the game with 12 lifepoints and they lose a lifepoint every time they guess a letter. They guess letters by pressing the key on the keyboard. If it is a correct guess, it is displayed in the correct location in the word. If it is an incorrect guess, it is added to the wrong guesses section. The user wins if they guess the word before they run out of lifepoints. The application keeps track of their wins and chooses a new word. If they lose, the game resets.</p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/Word-Guess-Game">GitHub
+                                                    Repository</a>
+                                            </li>
+                                            <li><a href="https://jenmaz12.github.io/Word-Guess-Game/">Deployed
+                                                    Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/crystal-collector.jpg" class="card-img"
-                                    alt="Crystal Collector image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">Crystal Collector Game</h5>
+                            <a data-toggle="modal" href="#crystal-page" title="Crystal Collector Game">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/crystal-collector.jpg" class="card-img"
+                                        alt="Crystal Collector image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Crystal Collector Game</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="crystal-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Crystal Collector Game</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>This application is a game in which a random integer is chosen between 19 and
+                                            120. This is the target number the user is trying to match. Then there are
+                                            four crystals, each with a random, hidden value between 1 and 12. When the
+                                            user clicks on a crystal, the value of that crystal is added to their total.
+                                            The goal of the game is to get their total to match the target number. If
+                                            their total exceeds the target number, they lose and new values are chosen
+                                            for the crystals and target number.</p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/Crystal-Collector">GitHub
+                                                    Repository</a>
+                                            </li>
+                                            <li><a href="https://jenmaz12.github.io/Crystal-Collector/">Deployed
+                                                    Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/harry-potter-trivia.jpg" class="card-img"
-                                    alt="Harry Potter Trivia Game image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">Harry Potter Trivia Game</h5>
+                            <a data-toggle="modal" href="#trivia-page" title="Harry Potter Trivia Game">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/harry-potter-trivia.jpg" class="card-img"
+                                        alt="Harry Potter Trivia Game image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Harry Potter Trivia Game</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="trivia-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Harry Potter Trivia Game</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>This application is a timed trivia game testing the user's knowledge of the
+                                            Harry Potter books and movies. When the user presses "Start", the first of
+                                            ten trivia questions is displayed. They have 30 seconds to answer each
+                                            question. They are alerted if their answer was correct, incorrect, or if
+                                            time ran out, then the next question automatically displays. When they have
+                                            completed all ten questions, they are shown a "Game Over" message and their
+                                            score. They can start the game over by pressing a "Start Over" button.</p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>setTimeout functions</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/Harry-Potter-Trivia-Game">GitHub
+                                                    Repository</a>
+                                            </li>
+                                            <li><a href="https://jenmaz12.github.io/Harry-Potter-Trivia-Game/">Deployed
+                                                    Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/routevisor.jpg" class="card-img" alt="RouteVisor image">
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-title">RouteVisor</h5>
+                            <a data-toggle="modal" href="#routevisor-page" title="RouteVisor">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/routevisor.jpg" class="card-img" alt="RouteVisor image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">RouteVisor</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="routevisor-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">RouteVisor</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>This application splits a long road trip into shorter legs based on the
+                                            user's input of number of miles they want to travel in one stretch. A map is
+                                            displayed to the user and as they enter their origin and destination, places
+                                            are suggested using the Google Places library and their route is displayed
+                                            once they have made their selections. When the user enters the maximum
+                                            number of miles they want to travel in one stretch, pins drop along the
+                                            route at the break points. Lodging options are then plotted around each
+                                            break point.</p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>Google Maps API</li>
+                                            <li>OpenWeatherMap API</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/ethgent2391/RouteVisor">GitHub
+                                                    Repository</a>
+                                            </li>
+                                            <li><a href="https://group3tripplanner.herokuapp.com/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
-                            <a data-toggle="modal" href="#train-page" title="GifTastic!">
+                            <a data-toggle="modal" href="#train-page" title="Train Scheduler">
                                 <div class="card" style="width: 18rem;">
                                     <img src="assets/images/train-scheduler.jpg" class="card-img"
                                         alt="Train Scheduler image">
@@ -152,7 +319,7 @@
                             </a>
                         </div>
                         <div id="train-page" class="modal fade" role="dialog">
-                            <div class="modal-dialog d-flex">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">Train Scheduler</h1>
@@ -162,7 +329,11 @@
                                     <div class="modal-body">
                                         <h3>Project Description:</h3>
                                         <hr>
-                                        <p>This application uses a Firebase database to store train schedules. Train times are retrieved from the database and displayed in a table to the user. Users can also add a train to the database by filling out and submitting the form below the table. The Next Arrival and Minutes Away columns are calculated using Moment.js</p>
+                                        <p>This application uses a Firebase database to store train schedules. Train
+                                            times are retrieved from the database and displayed in a table to the user.
+                                            Users can also add a train to the database by filling out and submitting the
+                                            form below the table. The Next Arrival and Minutes Away columns are
+                                            calculated using Moment.js</p>
                                         <h3>Technology Used:</h3>
                                         <hr>
                                         <ul>
@@ -174,11 +345,11 @@
                                             <li>Firebase</li>
                                             <li>Moment.js</li>
                                         </ul>
-                                        <br>
                                         <h3>Links:</h3>
                                         <hr>
                                         <ul>
-                                            <li><a href="https://github.com/jenmaz12/Train-Scheduler">GitHub Repository</a>
+                                            <li><a href="https://github.com/jenmaz12/Train-Scheduler">GitHub
+                                                    Repository</a>
                                             </li>
                                             <li><a href="https://jenmaz12.github.io/Train-Scheduler/">Deployed Site</a>
                                             </li>
@@ -198,7 +369,7 @@
                             </a>
                         </div>
                         <div id="gif-page" class="modal fade" role="dialog">
-                            <div class="modal-dialog d-flex">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">GifTastic!</h1>
@@ -246,7 +417,7 @@
                             </a>
                         </div>
                         <div id="bamazon-page" class="modal fade" role="dialog">
-                            <div class="modal-dialog d-flex">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">Bamazon</h1>
@@ -291,7 +462,7 @@
                             </a>
                         </div>
                         <div id="burger-page" class="modal fade" role="dialog">
-                            <div class="modal-dialog d-flex">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">Eat-Da-Burger</h1>
@@ -336,7 +507,7 @@
                             </a>
                         </div>
                         <div id="dogo-page" class="modal fade" role="dialog">
-                            <div class="modal-dialog d-flex">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">Dog-Go</h1>
