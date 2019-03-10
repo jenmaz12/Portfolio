@@ -239,7 +239,7 @@ a {
   .contact-info {
       word-wrap: break-word;
   }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     header {
         top: 0;
         left: 0;
@@ -256,25 +256,40 @@ a {
         padding-left: 10px;
         padding-right: 10px;
         background-image: url(../images/fresh_snow_@2X.png);
+        margin-right: 0;
+    }
+
+    .nav .navbar-nav {
+        margin-right: 0;
     }
 
     .nav-item {
         display: inline-block;
-        /* margin-left: 10px; */
+        margin-right: 0;
+    }
+
+    .navbar {
+        width: fit-content;
+        margin-right: 0;
     }
 
     .icon {
         filter: none;
         color: #395e60;
     }
+
+    .collapse {
+        margin: 0;
+    }
+
+    #project-cards {
+        position: relative;
+        /* z-index: 1; */
+    }
     ul {
         margin-bottom: 0;
     }
 
-    ul.nav {
-        /* height: 50px; */
-
-    }
 
     #portfolio-link {
         padding-bottom: 3px;
@@ -297,6 +312,10 @@ a {
         padding: 60px;
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    #projects {
+        max-width: 720px;
     }
 
     .card {
