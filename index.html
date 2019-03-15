@@ -103,7 +103,8 @@
         <section id="portfolio-page">
             <h1 class="section-title">Portfolio</h1>
             <div id="portfolio-body">
-                <div id="projects" class="container">
+                <h4 id="portfolio-ins">Click on a project to view its descrription, technologies used, and links.</h4>
+             <div id="projects" class="container">
                     <div class="row" id="project-cards">
                         <div class="col-xl-4 col-md-6 col-sm-12 cards">
                             <a data-toggle="modal" href="#hangman-page" title="Hangman: Candy Edition">
@@ -127,7 +128,15 @@
                                     <div class="modal-body">
                                         <h3>Project Description:</h3>
                                         <hr>
-                                        <p>This application is a candy-themed hangman game. A word is chosen randomly from an array of candy-themed words and displayed to the user with a __ representing each letter. The user starts the game with 12 lifepoints and they lose a lifepoint every time they guess a letter. They guess letters by pressing the key on the keyboard. If it is a correct guess, it is displayed in the correct location in the word. If it is an incorrect guess, it is added to the wrong guesses section. The user wins if they guess the word before they run out of lifepoints. The application keeps track of their wins and chooses a new word. If they lose, the game resets.</p>
+                                        <p>This application is a candy-themed hangman game. A word is chosen randomly
+                                            from an array of candy-themed words and displayed to the user with a __
+                                            representing each letter. The user starts the game with 12 lifepoints and
+                                            they lose a lifepoint every time they guess a letter. They guess letters by
+                                            pressing the key on the keyboard. If it is a correct guess, it is displayed
+                                            in the correct location in the word. If it is an incorrect guess, it is
+                                            added to the wrong guesses section. The user wins if they guess the word
+                                            before they run out of lifepoints. The application keeps track of their wins
+                                            and chooses a new word. If they lose, the game resets.</p>
                                         <h3>Technology Used:</h3>
                                         <hr>
                                         <ul>
@@ -558,14 +567,69 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 cards">
+                            <a data-toggle="modal" href="#scraper-page" title="New York Times Scraper">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/NYTscraper.jpg" class="card-img"
+                                        alt="New York Times Scraper image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">New York Times Scraper</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="scraper-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">New York Times Scraper</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>
+                                            This application uses cheerio and axios node packages to scrape the New York
+                                            Times website and store headlines and links to articles in a MongoDB
+                                            database. Then an ajax get request is used to pull the headlines and links
+                                            from the database and display them to the user on the front end.
+                                        </p>
+                                        <p>
+                                            Users can then either go to the article through the link or click on the
+                                            headline to make a note on the article. When they click on a headline, a
+                                            modal appears with a form for them to submit a note on the selected article.
+                                            On submission, the note is stored in that article document in the database.
+                                        </p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>MongoDB/Mongoose</li>
+                                            <li>Node</li>
+                                            <li>Express</li>
+                                            <li>Cheerio</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/mongo_scraping">GitHub
+                                                    Repository</a></li>
+                                            <li><a href="https://fast-beyond-49184.herokuapp.com/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contact-page">
             <h1 class="section-title">Contact</h1>
-            <div id="contact-body">
-                <h3>Please see my contact information below if you would like to get in touch!</h3>
+            <div id="contact-body" class="container-fluid">
+                <h4 id="contact-ins">Please see my contact information below if you would like to get in touch!</h4>
                 <div class="row contact-row">
                     <div class="col-md-12 col-xs-12 contact-column justify-content-center">
                         <a href="mailto:jenmaz12@gmail.com"><i class="fas fa-envelope contact-image"></i>
@@ -590,7 +654,8 @@
                 <div class="row contact-row">
                     <div class="col-md-12 col-xs-12 contact-column">
                         <a href="https://www.linkedin.com/in/jennifer-mazanec-609783a0/">
-                            <i class="fab fa-linkedin contact-image"></i><h4 class="contact-info iPhone-breakpoint" id="linkedin-profile">
+                            <i class="fab fa-linkedin contact-image"></i>
+                            <h4 class="contact-info iPhone-breakpoint" id="linkedin-profile">
                                 https://www.linkedin.com/in/jennifer-mazanec-609783a0/</h4>
                         </a>
                     </div>
