@@ -622,6 +622,61 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 cards">
+                            <a data-toggle="modal" href="#captionthis-page" title="Caption This!">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="assets/images/caption-this.jpg" class="card-img"
+                                        alt="Caption This! image">
+                                    <div class="card-img-overlay d-flex flex-column">
+                                        <h5 class="card-title">Caption This!</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="captionthis-page" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg d-flex">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Caption This!</h1>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            id="portfolio-close">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Project Description:</h3>
+                                        <hr>
+                                        <p>
+                                            This application uses cheerio and axios node packages to scrape the New York
+                                            Times website and store headlines and links to articles in a MongoDB
+                                            database. Then an ajax get request is used to pull the headlines and links
+                                            from the database and display them to the user on the front end.
+                                        </p>
+                                        <p>
+                                            Users can then either go to the article through the link or click on the
+                                            headline to make a note on the article. When they click on a headline, a
+                                            modal appears with a form for them to submit a note on the selected article.
+                                            On submission, the note is stored in that article document in the database.
+                                        </p>
+                                        <h3>Technology Used:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li>MongoDB/Mongoose</li>
+                                            <li>Node</li>
+                                            <li>Express</li>
+                                            <li>Cheerio</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                        <h3>Links:</h3>
+                                        <hr>
+                                        <ul>
+                                            <li><a href="https://github.com/jenmaz12/mongo_scraping">GitHub
+                                                    Repository</a></li>
+                                            <li><a href="https://fast-beyond-49184.herokuapp.com/">Deployed Site</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
